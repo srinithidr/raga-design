@@ -92,7 +92,9 @@ function StatsCounterSection() {
 
   return (
     <section className="stats-section" ref={sectionRef}>
+      <h2 className="stats-heading">Work Showcases</h2>
       <div className="stats-curve"></div>
+      
       <div className="stats-container">
         {statsData.map((item) => (
           <CounterItem

@@ -1,30 +1,30 @@
 import "./ServicesSection.css"
-import highlightImage from "@/assets/services/services-highlight.png"
+import serviceImage from "../../assets/services/service.jpg"
 
 const serviceCards = [
   {
     id: "01",
     icon: "❖",
-    title: "Growth & Expansion Consulting",
-    description: "Support business scaling, market entry strategies, and expansion planning.",
+    title: "Graphic Design",
+    description: "We make more crowd dive into your business with unique and captivating designs. Inhere we make the best marketing materials for any business.",
   },
   {
     id: "02",
     icon: "◔",
-    title: "Digital Transformation Consulting",
-    description: "Leverage modern technologies to modernize workflows and improve customer experiences.",
+    title: "Website Design",
+    description: "Get the best website for your business, products and services with trending features. We do customization and website revamping in a cost efficient manner.",
   },
   {
     id: "03",
     icon: "✣",
-    title: "Risk Management & Compliance",
-    description: "Identify potential risks, ensure regulatory compliance, and protect your business.",
+    title: "Website Development",
+    description: "Developers at Raga Designers are skilled and experience in using the latest website building technologies to give out the best performing site.",
   },
   {
     id: "04",
     icon: "✦",
-    title: "Growth & Expansion Consulting",
-    description: "Support business scaling, market entry strategies, and expansion planning.",
+    title: "E-Commerce Development",
+    description: "We let your products reach a wider audience. Kick start your online business with the best performing E-commerce website",
   },
 ]
 
@@ -32,8 +32,8 @@ function ServicesSection() {
   return (
     <section className="services-section">
       <div className="services-container">
-        <span className="services-tag">What We Offer</span>
-        <h2 className="services-title">Innovates Services That Elevate Your Business</h2>
+        <span className="services-tag">Our Services</span>
+      {/* //  <h2 className="services-title">Innovates Services That Elevate Your Business</h2> */}
 
         <div className="services-grid">
           {serviceCards.map((service) => (
@@ -51,11 +51,11 @@ function ServicesSection() {
 
           <article className="service-card service-card-highlight">
             <div className="service-highlight-overlay"></div>
-            <img src={highlightImage} alt="Consultants discussing strategy" className="service-highlight-image" />
+            <img src={serviceImage} alt="Consultants discussing strategy" className="service-highlight-image" />
             <div className="service-highlight-content">
               <span className="service-icon">◔</span>
-              <h3>Growth & Expansion Consulting</h3>
-              <p>Support business scaling, market entry strategies, and expansion planning.</p>
+              <h3>Digital Marketing & SEO</h3>
+              <p>Our SEO experts utilize the keywords to the fullest to rank high. We make your website get optimized as per the Search engine criteria.</p>
               <button type="button" className="service-button service-button-highlight">
                 <span>Get Started</span>
                 <span>↗</span>

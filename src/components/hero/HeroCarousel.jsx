@@ -3,7 +3,6 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { image1, image2, image3 } from "../../assets/hero";
 
-
 import {
   Carousel,
   CarouselSlide,
@@ -12,37 +11,31 @@ import {
 
 const slides = [
   {
-    id: "slide-1",
-    label: "Signature Residences",
-    headline: "Luxury spaces shaped for premium lifestyle brands.",
+    id: "slide-1", // ✅ added
+    label: "RagaDesign Studio",
+    headline: "We Design Experiences That Inspire",
     description:
-      "We design immersive interiors and architectural experiences that capture brand identity, increase guest engagement, and deliver measurable impact.",
-    image:
-      image1,
-    imageAlt:
-      "Modern living room with warm ambient lighting and luxury finishes.",
+      "Combining creativity and technology, we build digital products that stand out and deliver measurable results.",
+    image: image1,
+    imageAlt: "Slide 1", // ✅ added
   },
   {
-    id: "slide-2",
-    label: "Creative Studios",
-    headline: "Bold architecture for visionary hospitality and retail.",
+    id: "slide-2", // ✅ added
+    label: "Innovation & Growth",
+    headline: "Elevate Your Brand Presence",
     description:
-      "From concept to completion, our studio pairs strategic design with artful interiors to create memorable flagship storefronts, lounges, and creative workspaces.",
-    image:
-      image2,
-    imageAlt:
-      "Sleek boutique interior with statement lighting and contemporary furnishings.",
+      "We help businesses grow through strategic design, powerful branding, and performance-driven solutions.",
+    image: image2,
+    imageAlt: "Slide 2", // ✅ added
   },
   {
-    id: "slide-3",
-    label: "Brand-Driven Design",
-    headline: "Elegant spaces that tell your story with clarity.",
+    id: "slide-3", // ✅ added
+    label: "Future-Ready Solutions",
+    headline: "Where Ideas Become Reality",
     description:
-      "We combine refined material palettes, curated lighting, and responsive planning to create interiors that feel both timeless and thoughtfully tailored.",
-    image:
-      image3,
-    imageAlt:
-      "Open contemporary office with sculptural elements and premium finishes.",
+      "From concept to execution, we transform your vision into impactful digital experiences.",
+    image: image3,
+    imageAlt: "Slide 3", // ✅ added
   },
 ];
 
@@ -52,7 +45,9 @@ function HeroCarousel() {
   useEffect(() => {
     const autoSlideTimer = setInterval(() => {
       setActiveSlide((previousSlide) => {
-        const currentIndex = slides.findIndex((item) => item.id === previousSlide);
+        const currentIndex = slides.findIndex(
+          (item) => item.id === previousSlide
+        );
         const nextIndex = (currentIndex + 1) % slides.length;
         return slides[nextIndex].id;
       });
@@ -116,41 +111,6 @@ function HeroCarousel() {
       </Carousel>
 
       <div className="pointer-events-none absolute inset-x-0 top-0 h-60 bg-[radial-gradient(circle_at_top_left,_rgba(56,189,248,0.1),_transparent_30%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.08),_transparent_25%)]" />
-
-      {/*
-      <div className="absolute inset-x-3 sm:inset-x-6 lg:inset-x-10 top-1/2 flex -translate-y-1/2 items-center justify-between">
-        <button
-          type="button"
-          onClick={() => {
-            const currentIndex = slides.findIndex(
-              (item) => item.id === activeSlide,
-            );
-            const previousIndex =
-              (currentIndex + slides.length - 1) % slides.length;
-            setActiveSlide(slides[previousIndex].id);
-          }}
-          className="pointer-events-auto flex h-9 w-9 sm:h-12 sm:w-12 lg:h-14 lg:w-14 items-center justify-center rounded-full border border-white/10 bg-slate-950/70 text-white shadow-lg sm:shadow-xl shadow-black/30 transition hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/40"
-          aria-label="Previous slide"
-        >
-          <ArrowLeft className="h-4 w-4 sm:h-5 sm:w-5" />
-        </button>
-
-        <button
-          type="button"
-          onClick={() => {
-            const currentIndex = slides.findIndex(
-              (item) => item.id === activeSlide,
-            );
-            const nextIndex = (currentIndex + 1) % slides.length;
-            setActiveSlide(slides[nextIndex].id);
-          }}
-          className="pointer-events-auto flex h-9 w-9 sm:h-12 sm:w-12 lg:h-14 lg:w-14 items-center justify-center rounded-full border border-white/10 bg-slate-950/70 text-white shadow-lg sm:shadow-xl shadow-black/30 transition hover:border-white/20 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400/40"
-          aria-label="Next slide"
-        >
-          <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
-        </button>
-      </div>
-      */}
 
       <div className="absolute bottom-4 sm:bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-2 sm:gap-3">
         {slides.map((slide) => (

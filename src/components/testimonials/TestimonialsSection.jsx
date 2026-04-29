@@ -123,7 +123,8 @@ function TestimonialsSection() {
     <section className="testimonials-section">
       <div className="testimonials-container">
         <span className="testimonials-tag">Clients Feedback</span>
-        <h2 className="testimonials-title">Client Experiences That Speak for Themselves</h2>
+        <h2 className="testimonials-title">Whatever your business is, there is a possibility
+we have already developed a project for someone like you</h2>
 
         <div
           className="testimonials-grid"

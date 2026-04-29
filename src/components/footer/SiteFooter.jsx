@@ -14,22 +14,22 @@ function SiteFooter() {
 
         <div className="site-footer-links">
           <h4>Quick Links</h4>
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <a href="/">About us</a>
+          <a href="/about">Get Quote</a>
+          <a href="/contact">Term & Conditions</a>
         </div>
 
         <div className="site-footer-links">
           <h4>Services</h4>
-          <a href="/services/web-development">Web Development</a>
-          <a href="/services/app-development">App Development</a>
-          <a href="/services/ui-ux-design">UI/UX Design</a>
+          <a href="/services/web-development">Logo Designing</a>
+          <a href="/services/app-development">Web Designing</a>
+          <a href="/services/ui-ux-design">Domain Services</a>
         </div>
 
         <div className="site-footer-contact">
           <h4>Contact</h4>
-          <p>hello@ragadesign.com</p>
-          <p>+91 98765 43210</p>
+          <p>ragadesigns@ragadesign.com</p>
+          <p>+91 9962856406</p>
           <p>Bengaluru, India</p>
         </div>
       </div>
