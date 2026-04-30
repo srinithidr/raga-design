@@ -30,7 +30,7 @@ function SiteFooter() {
           <h4>Contact</h4>
           <p>ragadesigns@ragadesign.com</p>
           <p>+91 9962856406</p>
-          <p>Chennai, India</p>
+          <p>Chennai, Bangalore </p>
         </div>
       </div>
 
