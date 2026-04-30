@@ -1,4 +1,4 @@
-import "./SiteFooter.css"
+import "./SiteFooter.css";
 
 function SiteFooter() {
   return (
@@ -30,7 +30,7 @@ function SiteFooter() {
           <h4>Contact</h4>
           <p>ragadesigns@ragadesign.com</p>
           <p>+91 9962856406</p>
-          <p>Bengaluru, India</p>
+          <p>Chennai, India</p>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ function SiteFooter() {
         <p>© 2026 RagaDesign. All rights reserved.</p>
       </div>
     </footer>
-  )
+  );
 }
 
-export default SiteFooter
+export default SiteFooter;

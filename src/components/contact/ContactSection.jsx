@@ -1,4 +1,4 @@
-import "./ContactSection.css"
+import "./ContactSection.css";
 
 function ContactSection() {
   return (
@@ -6,8 +6,7 @@ function ContactSection() {
       <div className="contact-container">
         <div className="contact-content">
           <span className="contact-tag">Get In Touch</span>
-          <h2>Contact our professionals to know more
-about our services</h2>
+          <h2>Contact our professionals to know more about our services</h2>
           <p>
             Tell us about your project and goals. Our team will review your
             request and get back to you with the best next steps.
@@ -24,7 +23,7 @@ about our services</h2>
             </div>
             <div>
               <h3>Office</h3>
-              <p>Bengaluru, Karnataka, India</p>
+              <p>Chennai, India</p>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ about our services</h2>
         </form>
       </div>
     </section>
-  )
+  );
 }
 
-export default ContactSection
+export default ContactSection;

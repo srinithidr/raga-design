@@ -1,5 +1,6 @@
-import "@/pages/About.css"
-import aboutImage from "../../assets/about/about.jpg"
+import "./About.css";
+import aboutImage from "../../assets/about/about.jpg";
+import experience from "../../assets/about/experience.png";
 
 function AboutSection() {
   return (
@@ -7,9 +8,17 @@ function AboutSection() {
       <div className="about-container">
         <div className="about-image-column">
           <div className="about-main-frame"></div>
-          <img className="about-main-image" src={aboutImage} alt="Consulting team meeting" />
+          <img
+            className="about-main-image"
+            src={aboutImage}
+            alt="Consulting team meeting"
+          />
           <div className="about-circle-image-wrap">
-            <img className="about-circle-image" src={aboutImage} alt="Team planning discussion" />
+            <img
+              className="about-circle-image"
+              src={experience}
+              alt="Experience"
+            />
           </div>
         </div>
 
@@ -17,13 +26,17 @@ function AboutSection() {
           <span className="about-tag">About Raga Designers</span>
           <h2 className="about-title">Build Your Dream With us!!</h2>
           <p className="about-description">
-           Raga Designers is a well established Website Designing Company in Chennai,
-            India successfully entered in the global market 12 years back to conquer the local 
-            marketplace like Chennai, Bangalore, Mumbai, Hyderabad, Delhi, Kolkata and global marketplace 
-            like United States Of America (USA), United Kingdom (UK), Malaysia, Singapore, Sri Lanka, India, 
-            United Arab Emirates (UAE), Australia with its extra-ordinary strong presence on the Web Design, Web Development,
-             Ecommerce Development, SEO, Digital Marketimg. We have the most creative website designers near you to create a new
-              design for your company using the latest website designing and developemtn standards.
+            Raga Designers is a well established Website Designing Company in
+            Chennai, India successfully entered in the global market 12 years
+            back to conquer the local marketplace like Chennai, Bangalore,
+            Mumbai, Hyderabad, Delhi, Kolkata and global marketplace like United
+            States Of America (USA), United Kingdom (UK), Malaysia, Singapore,
+            Sri Lanka, India, United Arab Emirates (UAE), Australia with its
+            extra-ordinary strong presence on the Web Design, Web Development,
+            Ecommerce Development, SEO, Digital Marketimg. We have the most
+            creative website designers near you to create a new design for your
+            company using the latest website designing and developemtn
+            standards.
           </p>
 
           {/* <div className="about-feature-cards">
@@ -52,11 +65,13 @@ function AboutSection() {
             <li>Scalable growth strategies</li>
           </ul> */}
 
-          <button className="about-button" type="button">More Details ↗</button>
+          <button className="about-button" type="button">
+            More Details ↗
+          </button>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default AboutSection
+export default AboutSection;
